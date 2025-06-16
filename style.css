@@ -241,3 +241,26 @@ input:focus:invalid {
   border-color: var(--color-error);
   box-shadow: 0 0 0 3px rgba(224, 102, 102, 0.5);
 }
+
+.success-message,
+.error-message {
+  font-size: 0.75rem;
+  font-weight: bold;
+  font-style: italic;
+  display: none;
+}
+
+input:focus:valid:not(:placeholder-shown) ~ .success-message {
+  color: var(--color-success);
+  display: block;
+}
+
+input:focus:invalid ~ .error-message {
+  color: var(--color-error);
+  display: block;
+}
+
+form button[disabled] {
+  opacity: 0.6;
+  cursor: not-allowed;
+}
