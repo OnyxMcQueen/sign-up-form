@@ -38,28 +38,40 @@
                 <div class="form-group">
                   <label for="first-name">First Name</label>
                   <input type="text" id="first-name" name="first_name" minlength="2" required>
+                  <p class="success-message">Looks Good!</p>
+                  <p class="error-message">First Name must have a minimum length of 2</p>
                 </div>
                 <div class="form-group">
                   <label for="email">Email</label>
                   <input type="email" id="email" name="user_email" required>
+                  <p class="success-message">Looks Good!</p>
+                  <p class="error-message">Please enter a valid email address</p>
                 </div>
                 <div class="form-group">
                   <label for="password">Password</label>
                   <input type="password" id="password" name="user_password" minlength="8" required>
+                  <p class="success-message">Looks Good!</p>
+                  <p class="error-message">Password must be at least 8 characters long</p>
                 </div>
               </div>
               <div class="form-column-container">
                 <div class="form-group">
                   <label for="last-name">Last Name</label>
                   <input type="text" id="last-name" name="last_name" minlength="2" required>
+                  <p class="success-message">Looks Good!</p>
+                  <p class="error-message">Last Name must have a minimum length of 2</p>
                 </div>
                 <div class="form-group">
                   <label for="tel">Phone Number</label>
                   <input type="tel" id="tel" name="user_phone" title="Please enter a 10 digit phone number." placeholder="(000) 000 - 0000" pattern="\d{10}">
+                  <p class="success-message">Looks Good!</p>
+                  <p class="error-message">Please enter a valid phone number</p>
                 </div>
                 <div class="form-group">
                   <label for="password-confirm">Confirm Password</label>
                   <input type="password" id="password-confirm" name="user_password_confirm" minlength="8" required>
+                  <p class="success-message">Looks Good!</p>
+                  <p class="error-message">Password does not match</p>
                 </div>
               </div>
             </div>
@@ -72,6 +84,6 @@
         </div>
       </div>
   </div>
-  
+
 </body>
 </html>
